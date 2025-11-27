@@ -480,7 +480,12 @@ export default function App() {
       {showJournal && <SoulNotes userId={userId} onClose={() => setShowJournal(false)} />}
       {showEmpathy && <EmpathyPillar onClose={() => setShowEmpathy(false)} />}
       {showContacts && <EmergencyContacts userId={userId} onClose={() => setShowContacts(false)} />}
-      {showMusic && <MusicSuggestions mood={todayMood} onClose={() => setShowMusic(false)} />}
+      {showMusic && <MusicSuggestions mood={todayMood} onClose={() => setShowMusic(false)} onPlay={() => {
+        if (bgMusicRef.current) {
+          bgMusicRef.current.pause();
+          setBgMusicEnabled(false);
+        }
+      }} />}
       {showGames && <RelaxingGames onClose={() => setShowGames(false)} />}
       {showPeriodTracker && userGender === 'female' && (
         <PeriodTracker userId={userId} onClose={() => setShowPeriodTracker(false)} />

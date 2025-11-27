@@ -37,24 +37,24 @@ export function ChatBot({ onEmergency }: { onEmergency: () => void }) {
       "Awesome! Starting the day with food is so important for your energy and mood!",
     ],
     nobreakfast: [
-      "That's okay! Maybe grab a light snack? Even a banana or some nuts can help boost your energy! 🍌",
-      "No worries! When you're ready, try to eat something small. Your brain needs fuel! 💪",
+      "Oh, why did you skip breakfast? It's the most important meal of the day! 🍳 Please try to eat something small.",
+      "Is there a reason you didn't eat? Your body needs energy! Try to grab a quick snack if you can. 🍌",
     ],
     lunch: [
       "Wonderful! Taking time to eat is an act of self-care. Hope it was tasty! 🍱",
       "That's great! Proper nutrition helps with mood regulation. What did you enjoy?",
     ],
     nolunch: [
-      "It's important to nourish yourself! Can you take a quick break for a snack? 🥗",
-      "I understand life gets busy. Try to grab something when you can - your body will thank you!",
+      "Why didn't you have lunch? skipping meals can affect your mood. 🥗 Please eat something to fuel your body!",
+      "Oh no! Is everything okay? Try to take a break and eat something. You deserve to be nourished! 🥪",
     ],
     dinner: [
       "Perfect! Ending the day with a good meal. Hope you're relaxing now! 🌙",
       "That's wonderful! A good dinner can help you unwind from the day.",
     ],
     nodinner: [
-      "It's getting late! Try to eat something before bed - even something light. Your body needs it! 🥪",
-      "Don't forget to take care of yourself! A light meal can help you sleep better too.",
+      "Why haven't you had dinner yet? It's important to eat before bed. 🌙 Please find something to eat!",
+      "Is there a reason you skipped dinner? A light meal can help you sleep better. Please take care of yourself! 🥣",
     ],
     funfact: [
       "Fun fact: Smiling, even when you don't feel like it, can actually improve your mood! 😊",
