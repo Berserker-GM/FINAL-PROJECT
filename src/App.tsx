@@ -534,20 +534,24 @@ export default function App() {
                     <VolumeX className="w-6 h-6 text-gray-400" />
                   )}
                   <div>
-                    <h3 className="text-lg">Background Music</h3>
+                    <h3 className="text-lg font-semibold">Background Music</h3>
                     <p className="text-sm text-gray-500">Wellness Piano Loop</p>
                   </div>
                 </div>
+
+                {/* Toggle Switch */}
                 <button
                   onClick={(e) => {
                     e.stopPropagation();
                     setBgMusicEnabled(prev => !prev);
                   }}
-                  className={`relative w-14 h-8 rounded-full transition-colors ${bgMusicEnabled ? 'bg-purple-600' : 'bg-gray-300'
+                  className={`relative inline-flex h-8 w-14 items-center rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 ${bgMusicEnabled ? 'bg-green-500' : 'bg-gray-300'
                     }`}
+                  role="switch"
+                  aria-checked={bgMusicEnabled}
                 >
-                  <div
-                    className={`absolute top-1 left-1 w-6 h-6 bg-white rounded-full transition-transform ${bgMusicEnabled ? 'translate-x-6' : 'translate-x-0'
+                  <span
+                    className={`inline-block h-6 w-6 transform rounded-full bg-white shadow-lg transition-transform duration-200 ${bgMusicEnabled ? 'translate-x-7' : 'translate-x-1'
                       }`}
                   />
                 </button>
